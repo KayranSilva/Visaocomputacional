@@ -1,0 +1,43 @@
+import io
+import cv2
+import numpy as np
+from PIL import Image
+import matplotlib.pyplot as plt
+
+path = "/home/aluno/Documents/kayran/puppy.jpeg"
+
+image = np.array(Image.open(path))
+
+# write your code
+
+resized = ___.___
+
+height, width = ___.___
+center = ___
+
+rotation_matrix = ___.___
+
+rotated = ___.___
+
+cropped = ___.___
+
+plt.figure(figsize=(10, 10))
+
+plt.subplot(2, 2, 1)
+plt.imshow(image)
+plt.title("Original")
+
+plt.subplot(2, 2, 2)
+plt.imshow(resized)
+plt.title("Resized")
+
+plt.subplot(2, 2, 3)
+plt.imshow(rotated)
+plt.title("Rotated")
+
+plt.subplot(2, 2, 4)
+plt.imshow(cropped)
+plt.title("Cropped")
+
+plt.tight_layout()
+plt.show()
